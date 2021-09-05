@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>单行文本溢出省略号</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        padding: 15px;
+        color: #324b64;
+      }
+
+      .box{
+        padding: 10px;
+        background-color: #f5f6f9;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .one-line-ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        /* 非必须，只是为了制造一行放不下的效果 */
+        max-width: 375px; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p class="one-line-ellipsis">不要轻易向命运低头，因为一低头就会看到赘肉 如果你愿意一层一层剥开我的心</p>
+    </div>
+  </body>
+</html>
