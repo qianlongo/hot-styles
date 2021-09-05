@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常用css片段总结</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 15px;
+        color: #324b64;
+      }
+      /* 关键代码 */
+      .clearfix{
+        zoom: 1;
+      }
+      .clearfix::after{
+        display: block;
+        content: '';
+        clear: both;
+      }
+
+      .box {
+        padding: 10px;
+        background-color: #f5f6f9;
+        border-radius: 6px;
+        font-size: 12px;
+      }
+
+      .box >div{
+        width: 29%;
+        height: 100px;
+      }
+
+      .float-left{
+        background-color: #faa755;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .float-left2{
+        background-color: #7fb80e;
+      }
+
+      .float-left3{
+        background-color: #b2d235;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <div class="float-left"></div>
+      <div class="float-left float-left2"></div>
+      <div class="float-left float-left3"></div>
+    </div>
+
+    <!-- 每次跟别人吵架感觉都和考试一样，事后想起来--总是觉得没有发挥好 -->
+  </body>
+</html>
