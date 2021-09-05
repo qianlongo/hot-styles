@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常用css片段总结</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 15px;
+      }
+
+      .box {
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .arrow {
+        display: inline-block;
+        margin-right: 10px;
+        width: 0;
+        height: 0;
+        /* 基础样式 */
+        border: 16px solid;
+        border-color: transparent #CDDC39 transparent transparent;
+        position: relative;
+      }
+
+      .arrow::after {
+        content: "";
+        position: absolute;
+        /* 通过位移覆盖背景 */
+        right: -20px;
+        top: -16px;
+        border: 16px solid;
+        border-color: transparent #fff transparent transparent;
+      }
+      /*下*/
+      .arrow.bottom {
+        transform: rotate(270deg);
+      }
+      /*上*/
+      .arrow.top {
+        transform: rotate(90deg);
+      }
+      /*左*/
+      .arrow.left {
+        transform: rotate(180deg);
+      }
+      /*右*/
+      .arrow.right {
+        transform: rotate(0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box-inner">
+        <div class="arrow bottom"></div>
+        <div class="arrow top"></div>
+        <div class="arrow right"></div>
+        <div class="arrow left"></div>
+      </div>
+    </div>
+  </body>
+</html>
