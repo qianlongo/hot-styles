@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        display: flex;
+        align-items: center;
+
+      }
+      .scrollbar, .scrollbar-default {
+        width: 60px;
+        height: 300px;
+        background-color: #f5f6f9;
+        overflow-y: scroll;
+        margin-left: 15px;
+      }
+
+      .scrollbar::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+        background-color: #f5f5f5;
+      }
+
+      /*定义滚动条轨道
+        内阴影+圆角*/
+      .scrollbar::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #f5f5f5;
+      }
+      /*定义滑块
+      内阴影+圆角*/
+      .scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #555;
+      }
+
+      .scrollbar-inner, .scrollbar-inner-default {
+        min-height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scrollbar-default">
+      <div class="scrollbar-inner-default"></div>
+    </div>
+    <div class="scrollbar">
+      <div class="scrollbar-inner"></div>
+    </div>
+  </body>
+</html>

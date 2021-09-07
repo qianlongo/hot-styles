@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>常用css片段总结</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        padding: 15px;
+      }
+
+      .box, .box-vw{
+        background-color: #f5f6f9;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+
+      .box:nth-of-type(2){
+        width: 260px;
+      }
+      /* vw方案 */
+      .box-vw .img-container{
+        width: 100vw;
+        height: 66.620879vw;
+        padding-bottom: inherit;
+      }
+      /* padding方案 */
+      .img-container{
+        width: 100%;
+        height: 0;
+        /* 图片的高宽比 */
+        padding-bottom: 66.620879%;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="box-vw">
+      <div class="img-container">
+        <img src="https://i0.hippopx.com/photos/179/171/625/sparkler-holding-hands-firework-preview.jpg" alt="">
+      </div>
+    </div>
+  </body>
+</html>
