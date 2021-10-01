@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>not选择器</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    html,body{
+      background-color: #f7f8fa;
+      height: 100%;
+    }
+
+    ul,li{
+      list-style: none;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+
+    ul{
+      margin-top: 10px;
+      background-color: #fff;
+    }
+
+    li{
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li:not(:last-child){
+      border-bottom: 1px solid #ebedf0;
+    }
+
+    li span:first-child{
+      color: #323233;
+    }
+
+    li span:last-child{
+      color: #969799;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+    <li>
+      <span>单元格</span>
+      <span>内容</span>
+    </li>
+  </ul>
+</body>
+</body>
+</html>
