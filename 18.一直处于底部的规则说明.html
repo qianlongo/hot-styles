@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>18.一直处于底部的规则说明</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .container{
+      height: 100vh;
+      /* 关键css处 */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .main{
+      /* 关键css处 */
+      flex: 1;
+      background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .footer{
+      padding: 15px 0;
+      text-align: center;
+      color: #ff9a9e;
+      font-size: 14px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main">我是内容区域</div>
+    <div class="footer">规则说明</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body{
+        display: flex;
+        justify-content: center;
+      }
+
+      .caret-color {
+        width: 300px;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: solid 1px #ffd476;
+        box-sizing: border-box;
+        background-color: transparent;
+        outline: none;
+        color: #ffd476;
+        font-size: 14px;
+        caret-color: #ffd476;
+      }
+
+      .caret-color::-webkit-input-placeholder {
+        color: #4f4c5f;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="caret-color" />
+  </body>
+</html>
