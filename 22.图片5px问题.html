@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>解决图片5px问题</title>
+  <style>
+    html,body{
+      margin: 0;
+      padding: 0;
+    }
+
+    .img-container{
+      background-color: lightblue;
+      line-height: 5px;
+      /* font-size: 0; */
+    }
+
+    img{
+      width: 100%;
+      /* display: block; */
+      /* 这里 */
+      /* vertical-align: bottom; */
+    }
+  </style>
+</head>
+<body>
+  <div class="img-container">
+    <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F202002%2F05%2F20200205093101_yfocq.png&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1636215521&t=203563292576c66ba434651680281e8a" alt="">
+  </div>
+</body>
+</html>
